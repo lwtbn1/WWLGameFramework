@@ -1,0 +1,13 @@
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\Debuger.dll
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\LitJson.dll
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\UnityEditor.dll
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\UnityEngine.dll
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\UnityEngine.xml
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\UnityEditor.xml
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\obj\Debug\UnityVS.WWLGameFramework.CSharp.csprojResolveAssemblyReference.cache
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\obj\Debug\Assembly-CSharp.dll
+F:\CodeSpace\Unity3dCodedSpace\WWLGameFramework\obj\Debug\Assembly-CSharp.pdb
