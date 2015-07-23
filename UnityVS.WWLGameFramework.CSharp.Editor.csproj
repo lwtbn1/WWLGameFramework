@@ -83,7 +83,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Editor\AssetBundleUtil.cs" />
     <Compile Include="Assets\Editor\BindLua.cs" />
+    <Compile Include="Assets\Editor\VersionFile.cs" />
     <Compile Include="Assets\Editor\WelcomeScreen.cs" />
     <Compile Include="Assets\Editor\Wrap\ToLua_System_Delegate.cs" />
     <Compile Include="Assets\Editor\Wrap\ToLua_System_Enum.cs" />
@@ -91,9 +93,12 @@
     <Compile Include="Assets\Editor\Wrap\ToLua_System_String.cs" />
     <Compile Include="Assets\Editor\Wrap\ToLua_System_Type.cs" />
     <Compile Include="Assets\Editor\Wrap\ToLua_UnityEngine_Object.cs" />
+    <Compile Include="Assets\SocketIO\JSONObject\Editor\JSONChecker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Lua\System\readme.txt" />
+    <None Include="Assets\SocketIO\JSONObject\readme.txt" />
+    <None Include="Assets\SocketIO\Readme.txt" />
     <None Include="Assets\uLua\Examples\04_ScriptsFromFile\ScriptsFromFile01.lua.txt" />
     <None Include="Assets\uLua\README.txt" />
   </ItemGroup>

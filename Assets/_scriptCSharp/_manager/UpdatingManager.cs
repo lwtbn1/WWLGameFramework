@@ -29,12 +29,12 @@ public class UpdatingManager : MonoBehaviour
         Dictionary<string, string> oldList = new Dictionary<string, string>();
         Dictionary<string, string> newList = new Dictionary<string, string>();
         if(File.Exists(Define.VersionFileFullPath))
-            VersionFileUtil.ReadVersionFile(oldList);
+            VersionFileHelper.ReadVersionFile(oldList);
 
         yield return StartCoroutine(DownLoadVersionFileFromServer(Define.VersionFileName, null));
 
         if(File.Exists(Define.VersionFileFullPath))
-            VersionFileUtil.ReadVersionFile(newList);
+            VersionFileHelper.ReadVersionFile(newList);
 
         foreach (KeyValuePair<string, string> kv in newList)
         {
