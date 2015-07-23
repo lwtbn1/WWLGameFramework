@@ -43,5 +43,12 @@ public class Define
     public static string StreamingAssetsRoot = Application.dataPath + "/StreamingAssets/";
     public static string VersionFileFullPath = Application.persistentDataPath + "/" + PlatformStr + "/" + "version.dat";
     public static string VersionFileName = PlatformStr + "/" + "version.dat";
+
+    public struct VersionInfo
+    {
+        public string fileName;
+        public string md5;
+
+    }
 }
 

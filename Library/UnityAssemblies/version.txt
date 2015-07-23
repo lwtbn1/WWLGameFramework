@@ -1,5 +1,5 @@
-4.6.6f2:1.9.9.0
+4.6.7f1:1.9.9.0
 Android
-F:/WorkSoft/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.6/UnityEngine.UI.dll
-F:/WorkSoft/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.6/Editor/UnityEditor.UI.dll
+F:/WorkSoft/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.7/Standalone/UnityEngine.UI.dll
+F:/WorkSoft/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.7/Editor/UnityEditor.UI.dll
 F:/WorkSoft/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll

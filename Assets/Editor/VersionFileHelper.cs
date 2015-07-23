@@ -14,7 +14,7 @@ public class VersionFileHelper
     public static void CreateVersionFile()
     {
         List<string> allAssetBundleFullPath = new List<string>();
-        List<VersionInfo> versionInfoList = new List<VersionInfo>();
+        List<Define.VersionInfo> versionInfoList = new List<Define.VersionInfo>();
         FileHelper.GetAllFileFullPath(Define.StreamingAssetsRoot, ref allAssetBundleFullPath, ".unity3d");
         for (int i = 0; i < allAssetBundleFullPath.Count; i++)
         {
@@ -30,7 +30,7 @@ public class VersionFileHelper
                 sBuilder.Append(hashBytes[j].ToString("x2"));
             }
             string fileName = fullName.Substring(fullName.IndexOf("StreamingAssets") + "StreamingAssets".Length + 1, fullName.Length - fullName.IndexOf("StreamingAssets") - "StreamingAssets".Length - 1);
-            VersionInfo versionInfo = new VersionInfo();
+            Define.VersionInfo versionInfo = new Define.VersionInfo();
             versionInfo.fileName = fileName;
             versionInfo.md5 = sBuilder.ToString();
             versionInfoList.Add(versionInfo);
@@ -50,37 +50,9 @@ public class VersionFileHelper
         AssetDatabase.Refresh();
     }
 
-    public static void ReadVersionFile(Dictionary<string, string> list)
-    {
-        string versionFile = Define.VersionFileFullPath;
-        FileStream fs = null;
-        if (!File.Exists(versionFile))
-            return;
-        else
-            fs = new FileStream(versionFile, FileMode.Open, FileAccess.Read);  //打开读文件
-        
-        StreamReader sr = new StreamReader(fs);
-        StringBuilder sb = new StringBuilder();
-        string line = "";
-        while((line = sr.ReadLine()) != null){
-            sb.Append(line);
-        }
-        sr.Close();
-        fs.Close();
-
-        List<VersionInfo> tmp = JsonMapper.ToObject<List<VersionInfo>>(sb.ToString());
-        if (tmp == null || tmp.Count == 0)
-            return;
-        for (int i = 0; i < tmp.Count; i++)
-            list.Add(tmp[i].fileName, tmp[i].md5);
-    }
+    
 }
 
-public struct VersionInfo
-{
-    public string fileName;
-    public string md5;
 
-}
 
 

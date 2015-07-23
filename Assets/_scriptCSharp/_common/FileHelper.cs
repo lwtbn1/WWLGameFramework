@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
+using LitJson;
 public class FileHelper
 {
 
@@ -59,6 +61,32 @@ public class FileHelper
         }
         fsSource.Close();
         return bytes;
+    }
+
+    public static void ReadVersionFile(Dictionary<string, string> list)
+    {
+        string versionFile = Define.VersionFileFullPath;
+        FileStream fs = null;
+        if (!File.Exists(versionFile))
+            return;
+        else
+            fs = new FileStream(versionFile, FileMode.Open, FileAccess.Read);  //打开读文件
+
+        StreamReader sr = new StreamReader(fs);
+        StringBuilder sb = new StringBuilder();
+        string line = "";
+        while ((line = sr.ReadLine()) != null)
+        {
+            sb.Append(line);
+        }
+        sr.Close();
+        fs.Close();
+
+        List<Define.VersionInfo> tmp = JsonMapper.ToObject<List<Define.VersionInfo>>(sb.ToString());
+        if (tmp == null || tmp.Count == 0)
+            return;
+        for (int i = 0; i < tmp.Count; i++)
+            list.Add(tmp[i].fileName, tmp[i].md5);
     }
 }
 
